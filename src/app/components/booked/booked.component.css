@@ -1,0 +1,43 @@
+.timeslot {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background-color: white;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.timeslot.type0 {
+  background-color: rgba(139, 69, 19, 0.6);
+}
+.timeslot.type1 {
+  background-color: rgba(255, 255, 0, 0.6);
+}
+.timeslot.type2 {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+.timeslot.type3 {
+  background-color: rgba(128, 0, 128, 0.6);
+}
+.timeslot.type4 {
+  background-color: rgba(255, 20, 147, 0.6);
+}
+.timeslot.type5 {
+  background-color: rgba(255, 165, 0, 0.6);
+}
+
+.timeslot-time {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.timeslot .btn {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeslot .btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+}

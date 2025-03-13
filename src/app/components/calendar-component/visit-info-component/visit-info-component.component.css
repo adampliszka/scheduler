@@ -1,0 +1,10 @@
+.visit-info {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 1000;
+  width: 200px;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}

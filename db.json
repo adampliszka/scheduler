@@ -1,0 +1,197 @@
+{
+  "physicians": [
+    {
+      "id": 1,
+      "name": "Dr. John Doe",
+      "availableForThePeriods": [
+        {
+          "startDate": "2024-01-1",
+          "endDate": "2024-02-7"
+        },
+        {
+          "startDate": "2024-03-3",
+          "endDate": "2024-04-4"
+        },
+        {
+          "startDate": "2025-01-1",
+          "endDate": "2025-12-31"
+        }
+      ],
+      "workingDaysOfTheWeek": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "workingHours": [
+          {
+            "start": "8:00",
+            "end": "12:00"
+          },
+          {
+            "start": "15:00",
+            "end": "21:00"
+          }
+      ],
+      "absences": [
+        "2024-01-3",
+        "2024-04-1",
+        "2025-01-21"
+      ],
+      "manualAvailability": [
+        {
+          "date": "2024-05-1",
+          "slots": [
+            "09:30",
+            "10:00",
+            "10:30",
+            "11:00"
+          ]
+        }
+      ],
+      "appointments": [
+        {
+        "date": "2025-01-22",
+        "slots": [
+          {
+            "id": 1,
+            "time": "08:30",
+            "physician_id": 1,
+            "patient_id": 101,
+            "consultationType": 0,
+            "details": "Patient has a follow-up appointment",
+            "durationSlots": 1
+          }
+        ]
+        },
+        {
+        "date": "2025-01-25",
+        "slots": [
+          {
+            "id": 2,
+            "time": "09:30",
+            "physician_id": 1,
+            "patient_id": 103,
+            "consultationType": 2,
+            "details": "Patient needs a prescription refill",
+            "durationSlots": 3
+          }
+        ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. John Roe",
+      "availableForThePeriods": [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "workingDaysOfTheWeek": [
+
+      ],
+      "workingHours": [
+        {
+
+        },
+        {
+
+        }
+      ],
+      "absences": [
+
+      ],
+      "manualAvailability": [
+
+      ],
+      "appointments": [
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "date": "2025-01-22",
+      "slots": [
+        {
+          "id": 1,
+          "time": "08:30",
+          "physician_id": 1,
+          "patient_id": 101,
+          "consultationType": 0,
+          "details": "Patient has a follow-up appointment",
+          "durationSlots": 1
+        }
+      ]
+    },
+    {
+      "date": "2025-01-22",
+      "slots": [
+        {
+          "id": 2,
+          "time": "09:30",
+          "physician_id": 1,
+          "patient_id": 103,
+          "consultationType": 2,
+          "details": "Patient needs a prescription refill",
+          "durationSlots": 3
+        }
+      ]
+    }
+  ],
+  "patients": [
+    {
+      "id": 101,
+      "name": "Jane Smith",
+      "sex": "female",
+      "age": 35,
+      "appointments": [
+        {
+        "date": "2025-01-22",
+        "slots": [
+          {
+            "id": 1,
+            "time": "08:30",
+            "physician_id": 1,
+            "patient_id": 101,
+            "consultationType": 0,
+            "details": "Patient has a follow-up appointment",
+            "durationSlots": 1
+          }
+        ]
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "John Smith",
+      "sex": "male",
+      "age": 40
+    },
+    {
+      "id": 103,
+      "name": "Joanne Smith",
+      "sex": "female",
+      "age": 45,
+      "appointments": [
+        {
+          "date": "2025-01-22",
+          "slots": [
+            {
+              "id": 2,
+              "time": "09:30",
+              "physician_id": 1,
+              "patient_id": 103,
+              "consultationType": 2,
+              "details": "Patient needs a prescription refill",
+              "durationSlots": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

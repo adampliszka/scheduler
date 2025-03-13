@@ -1,0 +1,16 @@
+<div class="container mt-5 pt-5">
+  <div>
+    <h2>Admin Panel</h2>
+    <ul>
+      <li *ngFor="let user of users$ | async">
+        {{ user.email }}
+        <button (click)="setAdmin(user.id)" *ngIf="!user.roles.admin">Make Admin</button>
+        <button (click)="removeAdmin(user.id)" *ngIf="user.roles.admin">Remove Admin</button>
+        <button (click)="setPhysician(user.id)" *ngIf="!user.roles.physician">Make Physician</button>
+        <button (click)="removePhysician(user.id)" *ngIf="user.roles.physician">Remove Physician</button>
+        <button (click)="banUser(user.id)" *ngIf="user.roles.user">Ban User</button>
+        <button (click)="unbanUser(user.id)" *ngIf="!user.roles.user">Unban User</button>
+      </li>
+    </ul>
+  </div>
+</div>

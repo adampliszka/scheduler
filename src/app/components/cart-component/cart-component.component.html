@@ -1,0 +1,18 @@
+<div class="container mt-5 pt-5">
+  <div *ngIf="!isPhysician && patient">
+    <h2>Booked Appointments for {{ patient.name }}</h2>
+    <div *ngFor="let appointmentDate of patient.appointments">
+      <h3>{{ appointmentDate.date | date }}</h3>
+      <div *ngFor="let appointment of appointmentDate.slots" class="timeslot type{{ appointment.consultationType }}">
+        <div *ngIf="!appointment.paid">
+          <div class="timeslot-time">{{ appointment.time }}</div>
+          <div>Physician: Dr. {{ (schedulerService.getPhysician(appointment.physician_id) | async)?.name }}</div>
+          <div>Details: {{ appointment.details }}</div>
+          <div>Duration: {{ appointment.durationSlots }} slots</div>
+          <div>Paid: {{ appointment.paid ? 'Yes' : 'No' }}</div>
+          <button class="btn btn-outline-primary btn-sm" (click)="payAppointment(appointment)">Pay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

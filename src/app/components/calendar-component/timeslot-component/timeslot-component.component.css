@@ -1,0 +1,37 @@
+.timeslot {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeslot.empty-slot {
+  background-color: white; /* Ensure empty slots have a white background */
+  border: 1px solid #ccc; /* Light border for empty slots */
+  box-shadow: none; /* Remove shadow for empty slots */
+}
+.timeslot.type0 {
+  background-color: saddlebrown;
+}
+.timeslot.type1 {
+  background-color: yellow;
+}
+.timeslot.type2 {
+  background-color: green;
+}
+.timeslot.type3 {
+  background-color: purple;
+}
+.timeslot.type4 {
+  background-color: deeppink;
+}
+.timeslot.type5 {
+  background-color: orange;
+}
+
+.timeslot-time {
+  font-size: 14px;
+  text-align: center;
+}

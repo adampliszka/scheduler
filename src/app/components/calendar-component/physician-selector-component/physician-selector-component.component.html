@@ -1,0 +1,7 @@
+<!-- physician-selector.component.html -->
+<select class="form-select" (change)="onPhysicianSelect($event)">
+  <option value="" disabled selected>Physician:</option>
+  <option *ngFor="let physician of physicians$ | async" [value]="physician.id">
+    {{ physician.name }}
+  </option>
+</select>

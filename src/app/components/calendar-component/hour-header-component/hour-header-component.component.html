@@ -1,0 +1,6 @@
+<div class="hour-cell position-relative">
+  <div [class.current-hour]="isCurrentHour()">
+    {{ time }}
+  </div>
+  <div *ngIf="isCurrentHour()" class="arrow"></div>
+</div>

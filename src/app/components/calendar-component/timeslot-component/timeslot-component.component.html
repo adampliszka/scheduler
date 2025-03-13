@@ -1,0 +1,11 @@
+<!-- timeslot.component.html -->
+<div class="timeslot" [ngClass]="getTypeString()"
+  (mouseenter)="onHoverStart()"
+  (mouseleave)="onHoverEnd()">
+  <app-visit-info *ngIf="isHovered"
+    [visitTime]="appointment?.time"
+    [visitDetails]="appointment?.details"
+  >
+  </app-visit-info>
+  <div class="timeslot-time">{{ appointment?.time }}</div>
+</div>
