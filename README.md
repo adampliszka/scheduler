@@ -1,5 +1,8 @@
 # ProjektKoncowy
 
+Reservation web app for a clinic, student project. Features a live calendar, visit management, working hours management for employees, simulated payment etc. Login system in Firebase with roles and persistent user information.
+Didn't have the time to fix it so there's a bug that causes deleting an appointment to crash the app...
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
 ## Development server
